@@ -1,0 +1,236 @@
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background: #222222;
+    z-index: 5;
+}
+
+header h1 {
+    color: #D8DDE9;
+    padding-left: 20px;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+html, body, main {
+    margin: 0;
+    height: 100%;
+    background-color: #222222;
+    color: lightgray;
+}
+
+h1, h2, h3 {
+    color: #98B0A4;
+}
+
+.background1 h1 {
+    color: #3F4936;
+}
+
+.background1 {
+    background-color: #98B0A4;
+    color: #222222;
+}
+
+a {
+    color: #6981A9;
+}
+
+.headerImg {
+    margin-top: 80px;
+    background-image: url("assets/images/header-krabi.jpg");
+    /* center the background image vertically and horizontally*/
+    background-position: center center;
+    /* removing tilings and repeatition*/
+    background-repeat: no-repeat;
+    /* to scale image to fit the screen */
+    background-size: cover;
+    /* fixed viewport against scroll ups and downs*/
+    background-attachment: fixed;
+    height: 100%;
+}
+
+img, video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#contactform {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    align-items: stretch;
+    padding-bottom: 20px;
+}
+
+.contactform-element {
+    margin-top: 10px;
+}
+
+#aboutMe {
+    max-width: 800px;
+    margin: auto;
+}
+
+#aboutMe img{
+    width: 500px;
+}
+
+.picAsideText {
+    display: flex;
+    align-items: center;
+}
+
+.picAsideText img {
+    flex-grow:0;
+    flex-shrink:0;
+}
+
+.picAsideText .elementAsidePic{
+    margin-left: 40px;
+}
+
+#contact {
+    max-width: 800px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+#footer {
+    text-align: center
+}
+
+/* Nav- Menu*/
+
+nav.topmenu {
+    height: auto;
+    /*Menu ausblenden*/
+    max-height: 0;
+    overflow: hidden;
+    /*Animation HamburgerMenu Kreuz*/
+    transition: rotate 0.5s;
+}
+
+ul.menulist {
+    list-style-type: none;
+    text-align: center;
+    /*Elemente in Spalten rueckwerts anordnen*/
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+ul.menulist li>a {
+    display: block;
+    color: #D8DDE9;
+    text-align: center;
+    padding-top: 50px;
+    text-decoration: none;
+}
+
+/*HamburgerMenu Icon*/
+
+label.hamburg {
+    display: block;
+    float: right;
+    width: 75px;
+    height: 72px;
+    position: relative;
+    border-radius: 4px;
+}
+
+input#hamburg {
+    display: none
+}
+
+/*Hamburger Linien*/
+
+.line {
+    position: absolute;
+    left: 10px;
+    height: 4px;
+    width: 55px;
+    background: #fff;
+    border-radius: 2px;
+    display: block;
+    transition: 0.5s;
+    transform-origin: center;
+}
+
+.line:nth-child(1) {
+    top: 24px;
+}
+
+.line:nth-child(2) {
+    top: 36px;
+}
+
+.line:nth-child(3) {
+    top: 48px;
+}
+
+#hamburg:checked+.hamburg .line:nth-child(1) {
+    transform: translateY(12px) rotate(-45deg);
+}
+
+#hamburg:checked+.hamburg .line:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburg:checked+.hamburg .line:nth-child(3) {
+    transform: translateY(-12px) rotate(45deg);
+}
+
+/*Verberge Header Text wenn Navigation ausgeklappt*/
+
+#hamburg:checked~#header-text {
+    visibility: hidden;
+    height: 0px;
+}
+
+/*Navigation ausklappen*/
+
+#hamburg:checked+.hamburg+nav.topmenu {
+    max-height: 100%;
+}
+
+/*Aktuelle Seite ausgrauen*/
+
+#nav-main-li-a-actual {
+    color: gray;
+}
+
+/* PC */
+
+@media (min-width: 1025px) {
+    /*Navigationsmenu*/
+    .hamburg {
+        visibility: hidden;
+        max-width: 0px;
+        width: 0px;
+        max-height: 0px;
+        height: 0px;
+    }
+    nav.topmenu {
+        display: inline;
+    }
+    ul.menulist {
+        display: block;
+        padding-right: 10px;
+    }
+    ul.menulist li {
+        float: right;
+    }
+    ul.menulist li>a {
+        padding: 14px 16px;
+    }
+    ul.menulist li>a:hover {
+        background-color: #111;
+    }
+    #nav-main-li-a-actual:hover {
+        background-color: #111;
+    }
+}

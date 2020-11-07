@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jannik Weisser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <input type="checkbox" id="hamburg">
+        <label for="hamburg" class="hamburg">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </label>
+        <nav class="topmenu">
+            <ul class="menulist">
+                <li><a href="https://blog.jweisser.net">Blog</a></li>
+                <li><a href="https://portfolio.jweisser.net">Portfolio</a></li>
+                <li><a id="nav-main-li-a-actual" href="https://www.jweisser.net">Home</a></li>
+            </ul>
+        </nav>
+        <h1 id="header-text">Jannik Weisser</h1>
+    </header>
+
+    <main>
+        <div class="headerImg"></div>
+        <div id="aboutMe">
+            <h1>Über mich</h1>
+            <div class="picAsideText">
+                <img src="assets/images/jannik.jpg" alt="it's me">
+                <div class="elementAsidePic">
+                    <p>Mein Name ist Jannik und ich studiere Medieninformatik an der Fakultät Digitale Medien der
+                        Hochschule
+                        Furtwangen.
+                        In meiner Freizeit gehe ich gerne Bouldern, Klettern oder mache Musik.</p>
+                    <h2>Mein Studium</h2>
+                    <p>Ich studiere Medieninformatik, weil ich ein Studium gesucht habe, in welchem ich in mehrere
+                        Bereiche
+                        die mich interessieren, wie Informatik, Animation und Postproduktion ausprobieren, und das ganze
+                        später vertiefen kann.</p>
+                </div>
+            </div>
+        </div>
+        <div class="background1">
+            <div id="contact">
+                <h1>Kontakt</h1>
+                <div>
+                    <form id="contactform" method="post" accept-charset="UTF-8"
+                        action="https://www.onlex.de/_formmailer.php?username=janwdev"
+                        enctype="application/x-www-form-urlencoded">
+                        <input class="contactform-element" name="name" type="text" id="input-name" placeholder="Name"
+                            required>
+                        <input class="contactform-element" name="eMail" type="email" id="input-email"
+                            placeholder="Email" required>
+                        <textarea class="contactform-element" name="Nachricht" rows="4" placeholder="Nachricht"
+                            required></textarea>
+                        <button class="contactform-element">Senden</button>
+                        <button class="contactform-element" type="reset">Daten löschen</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>&copy;Jannik Weisser</p>
+        </div>
+    </main>
+
+</body>
+
+</html>
