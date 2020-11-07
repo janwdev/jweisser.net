@@ -77,21 +77,8 @@ img, video {
 }
 
 #aboutMe img{
-    width: 500px;
-}
-
-.picAsideText {
-    display: flex;
-    align-items: center;
-}
-
-.picAsideText img {
-    flex-grow:0;
-    flex-shrink:0;
-}
-
-.picAsideText .elementAsidePic{
-    margin-left: 40px;
+    max-width: 500px;
+    width: 100%;
 }
 
 #contact {
@@ -232,5 +219,19 @@ input#hamburg {
     }
     #nav-main-li-a-actual:hover {
         background-color: #111;
+    }
+
+    .picAsideText {
+        display: flex;
+        align-items: center;
+    }
+    
+    .picAsideText img {
+        flex-grow:0;
+        flex-shrink:0;
+    }
+    
+    .picAsideText .elementAsidePic{
+        margin-left: 40px;
     }
 }
