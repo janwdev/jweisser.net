@@ -13,14 +13,9 @@ header h1 {
 }
 
 html {
-    font-family: sans-serif;
-}
-
-html, body, main {
-    margin: 0;
-    height: 100%;
     background-color: #222222;
     color: lightgray;
+    font-family: sans-serif;
 }
 
 h1, h2, h3 {
@@ -40,51 +35,9 @@ a {
     color: #6981A9;
 }
 
-.headerImg {
-    margin-top: 80px;
-    background-image: url("assets/images/header-krabi.jpg");
-    /* center the background image vertically and horizontally*/
-    background-position: center center;
-    /* removing tilings and repeatition*/
-    background-repeat: no-repeat;
-    /* to scale image to fit the screen */
-    background-size: cover;
-    /* fixed viewport against scroll ups and downs*/
-    background-attachment: fixed;
-    height: 100%;
-}
-
 img, video {
     max-width: 100%;
     max-height: 100%;
-}
-
-#contactform {
-    display: flex;
-    flex-flow: row wrap;
-    flex-direction: column;
-    align-items: stretch;
-    padding-bottom: 20px;
-}
-
-.contactform-element {
-    margin-top: 10px;
-}
-
-#aboutMe {
-    max-width: 800px;
-    margin: auto;
-}
-
-#aboutMe img{
-    max-width: 500px;
-    width: 100%;
-}
-
-#contact {
-    max-width: 800px;
-    margin: auto;
-    padding-top: 20px;
 }
 
 #footer {
@@ -190,6 +143,22 @@ input#hamburg {
     color: gray;
 }
 
+/*Tablet*/
+
+@media (min-width: 600px) {
+    .picAsideText {
+        display: flex;
+        align-items: center;
+    }
+    .picAsideText img {
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    .picAsideText .elementAsidePic {
+        margin-left: 40px;
+    }
+}
+
 /* PC */
 
 @media (min-width: 1025px) {
@@ -220,18 +189,15 @@ input#hamburg {
     #nav-main-li-a-actual:hover {
         background-color: #111;
     }
-
     .picAsideText {
         display: flex;
         align-items: center;
     }
-    
     .picAsideText img {
-        flex-grow:0;
-        flex-shrink:0;
+        flex-grow: 0;
+        flex-shrink: 0;
     }
-    
-    .picAsideText .elementAsidePic{
+    .picAsideText .elementAsidePic {
         margin-left: 40px;
     }
 }
