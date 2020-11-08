@@ -41,9 +41,10 @@ h1, h2, h3, h4, h5 {
     color: #222222;
 }
 .background1 {
-    padding-top: 20px;
+    padding-top: 15px;
     background-color: #98B0A4;
     color: #222222;
+    padding-bottom: 15px;
 }
 
 a {

@@ -17,6 +17,20 @@ html, body, main {
     height: 100%;
 }
 
+.headerImg50 {
+    margin-top: 80px;
+    background-image: url("../assets/images/header-krabi.jpg");
+    /* center the background image vertically and horizontally*/
+    background-position: center center;
+    /* removing tilings and repeatition*/
+    background-repeat: no-repeat;
+    /* to scale image to fit the screen */
+    background-size: cover;
+    /* fixed viewport against scroll ups and downs*/
+    background-attachment: fixed;
+    height: 50%;
+}
+
 #contactform {
     display: flex;
     flex-flow: row wrap;
@@ -29,18 +43,13 @@ html, body, main {
     margin-top: 10px;
 }
 
-#aboutMe {
-    max-width: 800px;
+.maxWidth800 {
     margin: auto;
+    max-width: 800px;
 }
 
 #aboutMe img {
     width: 100%;
-}
-
-#contact {
-    max-width: 800px;
-    margin: auto;
 }
 
 /*Tablet*/
