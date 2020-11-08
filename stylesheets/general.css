@@ -18,14 +18,28 @@ html {
     font-family: sans-serif;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
     color: #98B0A4;
 }
 
 .background1 h1 {
     color: #3F4936;
 }
-
+.background1 h2 {
+    color: #3F4936;
+}
+.background1 h3 {
+    color: #3F4936;
+}
+.background1 h4 {
+    color: #3F4936;
+}
+.background1 h5 {
+    color: #3F4936;
+}
+.background1 p {
+    color: #222222;
+}
 .background1 {
     background-color: #98B0A4;
     color: #222222;
