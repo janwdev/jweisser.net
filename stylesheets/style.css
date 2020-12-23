@@ -1,69 +1,59 @@
-html, body, main {
-    margin: 0;
-    height: 100%;
+body, html {
+  height: 100%;
 }
 
-.headerImg {
-    margin-top: 80px;
-    background-image: url("../assets/images/header-krabi.jpg");
-    /* center the background image vertically and horizontally*/
-    background-position: center center;
-    /* removing tilings and repeatition*/
-    background-repeat: no-repeat;
-    /* to scale image to fit the screen */
-    background-size: cover;
-    /* fixed viewport against scroll ups and downs*/
-    background-attachment: fixed;
-    height: 100%;
+.parallax {
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.headerImg50 {
-    margin-top: 80px;
-    background-image: url("../assets/images/header-krabi.jpg");
-    /* center the background image vertically and horizontally*/
-    background-position: center center;
-    /* removing tilings and repeatition*/
-    background-repeat: no-repeat;
-    /* to scale image to fit the screen */
-    background-size: cover;
-    /* fixed viewport against scroll ups and downs*/
-    background-attachment: fixed;
-    height: 50%;
+.krabiHeader {
+  /* The image used */
+  background-image: url('/assets/images/header-krabi.jpg');
+  /* Full height */
+  height: 100vh;
+  /* opacity: 0.65; */
 }
 
-#contactform {
-    display: flex;
-    flex-flow: row wrap;
-    flex-direction: column;
-    align-items: stretch;
-    padding-bottom: 20px;
+.background-dark-opac {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.contactform-element {
-    margin-top: 10px;
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  position: relative;
 }
 
-.maxWidth800 {
-    margin: auto;
-    max-width: 800px;
+.resume-station {
+  margin-bottom: 10px;
 }
 
-#aboutMe img {
-    width: 100%;
+.resume-years {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 5px 15px 5px 15px;
+  display: inline-block;
 }
 
-/*Tablet*/
-
-@media (min-width: 600px) {
-    #aboutMe img {
-        max-width: 350px;
-    }
+.resume .resume-item:last-child {
+  padding-bottom: 0;
 }
 
-/* PC */
-
-@media (min-width: 1025px) {
-    #aboutMe img {
-        max-width: 500px;
-    }
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #18d26e;
+  border: 2px solid #18d26e;
 }
